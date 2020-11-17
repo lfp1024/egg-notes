@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "egg": "^2.27.0",
-    "egg-scripts": "^2.11.0"
+    "egg-scripts": "^2.11.0",
+    "egg-tracer": "^1.1.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",

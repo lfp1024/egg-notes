@@ -2,6 +2,8 @@
 
 'use strict';
 
+const loggerConfig = require('./config.logger.js');
+
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -16,12 +18,20 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1603864556756_6694';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = ['request'];
+
+  config.tracer = {
+    Class: require('../app/tracer'),
+  };
 
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
   };
+
+  config.customLogger = {
+    ...loggerConfig,
+  }
 
   return {
     ...config,
