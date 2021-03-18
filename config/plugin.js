@@ -10,4 +10,8 @@ module.exports = {
     enable: true,
     package: 'egg-tracer',
   },
+  redis: {
+    enable: true,
+    package: 'egg-redis',
+  },
 };

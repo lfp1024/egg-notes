@@ -1,3 +1,16 @@
 {
-  "extends": "eslint-config-egg"
+  "extends": "eslint-config-egg",
+  "rules": {
+    "indent": "off",
+    "space-before-function-paren": 0,
+    "linebreak-style": "off",
+    "array-bracket-spacing": "off",
+    "jsdoc/check-tag-names": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ]
+  }
 }
